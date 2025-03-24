@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Index page by using table </title>
+<style>
+    .table{
+        width: 100%;
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        border-collapse: collapse;
+
+    }
+    .first row{
+        height: 100%;
+        
+    }
+    .first-row-td-one{
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        background-color: lightblue;
+    }
+    .first-row-td-two{
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        background-color: darksalmon;
+    }
+    .first-row-td-three{
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        background-color: lightcoral;
+    }
+    .first-row-td-four{
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        background-color: cadetblue;
+    }
+    /*Second row css*/
+    .second-row{
+        height: 500px;
+        background-color: lightpink;
+    }
+    .second-row-td-one{
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+    }
+    /*third row css*/
+    .third-row{
+        height: 500px;
+        background-color: lightgreen;
+    }
+    .third-row-td-one{
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+    }
+    /*fourth row*/
+    .fourth-row{
+        height: 500px;
+        background-color: lightskyblue;
+    }
+    .fourth-row-td-one{
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+    }
+    /*fifth row*/
+    .fifth-row{
+        height: 500px;
+        background-color:lightseagreen;
+    }
+    .fifth-row-td-one{
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+    }
+
+
+</style>
+</head>
+<body>
+    <table class="table">
+        <!--first row-->
+        <tr class="first-row">
+            <th class="first-row-td-one"><h3>Home</h3></th>
+            <th class="first-row-td-two"> <h3>About</h3></th>           
+            <th class="first-row-td-three"><h3>Project</h3></th>
+            <th class="first-row-td-four"><h3>Contact</h3></th>
+        </tr>
+        <!--second row-->
+        <tr class="second-row">
+            <td colspan="4" class="second-row-td-one"> Home</td>
+        
+        </tr>
+        <!--third row-->
+        <tr class="third-row">
+            <td colspan="4" class="third-row-td-one"> About</td>
+          
+        </tr>
+        <!--fourth row-->
+        <tr class="fourth-row">
+        <td colspan="4" class="fourth-row-td-one">Project</td>
+            
+        </tr>
+        <!--fifth row-->
+        <tr class="fifth-row">
+            <td colspan="4" class="fifth-row-td-one"> Contact</td>
+            
+        </tr>
+    </table>
+    
+</body>
+</html>
