@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>power of number</title>
+</head>
+<body>
+    <input type="text" id="one" placeholder="Enter number for table"> 
+    <button onclick="myFunction()">Print table</button>
+    <!-- <input type="date" name="" id=""> -->
+    <p id="display"></p>
+    <!-- <p id="display1"></p> -->
+      <!-- <p id="display2"></p> -->
+    <!-- <button onclick="date()">Check</button> -->
+    <!-- <button onclick="fullName()">button</button> -->
+    <!-- <button onclick="power(a,b)">check</button> -->
+     <!-- <button onclick="randomNum1()">Return1</button>
+     <button onclick="randomNum2()">Return2</button>
+     <button onclick="randomNum3()">Return3</button> -->
+    <script>
+        // function checkPower(){
+        //     let power = [1,2,3,4]
+        // let num = document.getElementById("one").value;
+        
+        // if (power > 1){
+        //     for(let i = 1; i < power; i ++){
+        //      result = result * num
+        //      alert(result)
+        //     } 
+        // }
+        // }
+
+        // function power(a,b){
+        //     let num = a
+        //     let power = b
+        //     let result = num
+
+        //     power = Math.pow(10,2);
+        //     power = Math.sqrt()
+        //     power = Math.cbrt()
+          
+        //     alert(power)
+        // }
+
+
+        // let name = "shruti";
+        // let letter = name.charAt(0);
+        // let newletter = letter.toUpperCase();
+        // let str = name.slice(1, name.length);
+        // let newName = newLetter + str;
+
+        // const date = new Date(2024/7/12)
+        // let year = date.getFullYear()
+        // alert(date)
+
+
+        function name(){
+            const name = document.getElementById("one").value;
+            let name1 = name.charAt(0).toUpperCase() + name.slice(1);
+            return name1;
+        }
+
+        function age(){
+            const today = new Date("2025-08-03");
+            const birth = new Date("2006-07-12");
+            let years = today.getFullYear() - birth.getFullYear()
+            return years;
+        }
+
+        // function randomNum(){
+        //     let num = Math.floor(Math.random() * 10);
+        //     return num;
+        // }
+
+        function date(){
+            let a = name()
+            let b = age()
+            let c = randomNum()
+            document.getElementById("display" ).innerHTML = " Welcome " + a + " ! " + " Your age is " + b + " & your userId is: " + c 
+            console.log(" Welcome " + a + " ! " + " Your age is " + b + " & your userId is " + c )
+        }
+
+
+        
+   function fullName() {
+  let name = document.getElementById("one-input").value;
+let words = name.split(" ");
+ 
+  let firstName = words[0];
+    let middleName = words[1];
+    let lastName = words[2];
+ 
+    firstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
+    middleName = middleName.charAt(0).toUpperCase() + middleName.slice(1);
+    lastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
+ 
+    let showname = firstName + " " + middleName + " " + lastName;
+ 
+    return showname;
+}
+//   return funtion
+      function fullnames() {
+        let a = fullname();
+     console.log(a)
+      }
+
+
+      function randomNum(){
+            let num = Math.floor(Math.random() * 10);
+             return num;
+            // alert(num)
+            // console.log(num)
+            // document.getElementById("display").innerHTML = num;
+
+        }
+        function randomNum1(){
+            let number = randomNum()
+            //  return number;
+            // alert(num)
+            // console.log(num)
+            document.getElementById("display").innerHTML = number;
+
+        }
+        function randomNum2(){
+            let numone = randomNum()
+            //  return numone;
+            // alert(num)
+            // console.log(num)
+            document.getElementById("display1").innerHTML = numone;
+
+        }
+        function randomNum3(){
+            let numtwo = randomNum()
+            //  return numone;
+            // alert(num)
+            // console.log(num)
+            document.getElementById("display2").innerHTML = numtwo;
+
+        }
+        // function randomNum(){
+        //     let a = randomNum1()
+        //     let b = randomNum2()
+        //     let c = randomNum3()
+        //     document.getElementById("display").innerHTML = num
+        // }
+
+    //    for(let x = 1 ; x <= 10; x++){
+    //     console.log(x)
+    //    }
+    //  let x = 1
+    //    while(x<=10){
+    //     console.log(x);
+    //     x++
+    //    }
+
+
+    // let x = 10
+    //    while(x>=1){ 
+    //     console.log(x);
+    //     x--;                 
+    //    }
+
+//     let i = 1;
+
+// while (i <= 10) {
+//   console.log((5 * i));
+//   i++;
+// }
+
+// let i = 10
+// while (i <= 55){
+//     console.log((i - 5));
+//     i+= 5;
+// }
+
+// let i = 10
+// while (i <= 20){
+//     console.log((i-9)*5);
+//     i++;
+// }
+
+// let x = 50
+// while (x >= 5){
+//     console.log(x);
+//     x = x - 5;
+
+// }
+
+// let i = 45
+// while(i >= 5){
+//     console.log(i + 5);
+//     x = i- 5
+// }
+
+function getNum(){
+    
+    let x = document.getElementById("one").value;
+    while(x <= 10){
+        console.log(x);
+    }
+}
+
+function myFunction() {
+            let x = Number(document.getElementById("input").value);
+ 
+            for (let i = 1; i <= 10; i++) {
+                console.log(x * i);
+            }
+        }
+ 
+
+
+
+
+
+
+  
+
+
+
+   
+ 
+ 
+  
+    </script>
+</body>
+</html>
